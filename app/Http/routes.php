@@ -13,5 +13,21 @@
 
 Route::get('/', function()
 {
-	return view('welcome');
+	return view('kids.index');
+});
+
+Route::get('/about',function(){
+	return view('kids.aboutUs');
+});
+
+Route::get('/portfolio',function(){
+	return view('kids.portfolio');
+});
+
+Route::get('/contact',function(){
+	return view('kids.contactUs');
+});
+
+Route::get('/services',function(){
+	return view('kids.services');
 });
